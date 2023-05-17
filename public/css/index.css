@@ -31,9 +31,7 @@ p:hover {
 span {
   text-align: left;
   text-transform: capitalize;
-
-  text-decoration: underline solid red;
-  
+  text-decoration: underline solid;   
 }
 
 span:hover {
@@ -63,4 +61,17 @@ span {
 
 p {
 	font-stretch: expanded;
+}
+
+.test {
+	display: none;
+} 
+
+.block {
+	display: block;
+	background: darkslategray;
+	margin: auto;
+
+	min-height: 500px;
+	max-height: max-content;
 }
