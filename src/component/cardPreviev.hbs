@@ -1,0 +1,16 @@
+{{#with data}}
+<div class="previev">
+	<div class="previev_header">
+		<span class="previev_date">{{date}}</span>
+
+		{{#each category}}
+			<span class="previev_category previev_category_{{id}}">{{text}}</span>
+		{{/each}}
+	</div>
+
+	<strong class="previev_title">{{title}}</strong>
+
+	<p class="previev_description">{{text}}</p>
+	<a href="*">Continue reading</a>
+</div>
+{{/with}}

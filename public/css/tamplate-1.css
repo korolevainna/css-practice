@@ -10,6 +10,8 @@
 
 .header {
    padding: 24px;
+
+   border-bottom: 1px solid #DEE2E6;
 }
 
 .header_logo {
@@ -60,6 +62,7 @@
 
 .footer {
 	padding: 24px;
+	border-top: 1px solid #DEE2E6;
 }
 
 .footer_copyright {
@@ -93,6 +96,7 @@
 	text-align: center;
 	max-width: 585px;
 	margin: 0 auto;
+	line-height: 150%;
 }
 
 .plans_card:not(:last-of-type) {
@@ -149,4 +153,54 @@
 	font-size: 19px;
 	padding: 9px;
 }
+.card {
+	border: 2px solid red;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px 1px rgb(255, 0, 0);
+}
 
+
+.card:hover {
+	outline: 2px solid blue;
+	outline-offset: 5px;
+	box-shadow: 5px 5px 10px 1px rgba(116, 169, 255, 0.254);
+}
+
+.btn {
+	border-radius: 20px;
+}
+
+h1 {
+	text-shadow: 0px 20px 2px red;
+}
+
+.plans_card :nth-child(2) > card {
+	background: red;
+}
+
+p {
+	background: gray;
+	width: 200px;
+	height: 100px;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	text-overflow: ellipsis;
+}
+
+.hero_text {
+	background: gray;
+	text-align: left;
+	max-width: 750px;
+}
+
+.hero_title {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	height: 65px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: pre;
+}
