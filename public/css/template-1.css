@@ -204,3 +204,24 @@ p {
 	text-overflow: ellipsis;
 	white-space: pre;
 }
+
+
+.page {
+	background-image: url("/img/ggy/png");
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: contain;
+}
+
+.hero_text {
+	padding: 40px;
+	color: #84e19e;
+
+	border-image-source: url("/img/ggy/png");
+	border-image-width: 10% 10%;
+	border-image-slice: 10% 10%;
+
+	border-image-slice: 40px;
+}
