@@ -295,6 +295,6 @@
 	color: #007BFF;
 }
 
->.link_item:hover {
+.link_item:hover {
 	text-decoration: underline;
 }
