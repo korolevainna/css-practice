@@ -1,3 +1,7 @@
+:root {
+	--text-color: #212529;
+}
+
 .page {
 	background: #FFFFFF;
 	padding: 0 15px;
@@ -37,6 +41,7 @@
 .nav_link:hover {
 	text-decoration: underline;
 	color: blue;
+	opacity: 50%;
 }
 
 .nav_vertical > .nav_link {
@@ -164,6 +169,8 @@
 	outline: 2px solid blue;
 	outline-offset: 5px;
 	box-shadow: 5px 5px 10px 1px rgba(116, 169, 255, 0.254);
+	cursor: not-allowed;
+	opacity: 0.5;
 }
 
 .btn {
@@ -222,6 +229,62 @@ p {
 	border-image-source: url("/img/ggy/png");
 	border-image-width: 10% 10%;
 	border-image-slice: 10% 10%;
-
-	border-image-slice: 40px;
 }
+
+.card-blok {
+	/*list-style-type: circle;*/
+	list-style-position: inside;
+
+	list-style-image: linear-gradient(
+		to bottom right,
+		blue,
+	    red);
+
+	padding: 0;
+}
+
+.card_description_item {
+	display: list-item;
+}
+
+/*.table tr {
+	border: 1px solid #343A40;
+}*/
+
+.table tr td {
+	border: 1px solid #27598a;
+	border-bottom: 1px solid red;
+	border-right-color: blue;	
+}
+
+.table {
+	table-layout: fixed;
+	width: 600px;
+
+	border-collapse: unset;
+	border-spacing: 20px 10px;
+	caption-side: top;
+	empty-cells: hide;
+}
+
+.nav_link::before,
+.nav_link::after {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-image: url("/img/ggy/png");
+}
+
+.nav_link::before {
+	margin-right:  15px;
+}
+
+.calc {
+	width: 600px;
+	margin: 0;
+	margin-left: calc(100% - (600px / 2));
+}
+
+
+
