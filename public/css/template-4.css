@@ -121,6 +121,7 @@
 
 .hero {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	gap: var(--spase-b);
 
@@ -137,11 +138,12 @@
 .hero_content {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: var(--space-l);
 }
 
 .hero_title {
-	font-size: 50px;
+	font-size: var(--spase-b);
 	color: var(--color-title);
 	font-weight: var(--weight-title);
 	line-height: 120%;
@@ -151,7 +153,15 @@
 	color: var(--color-text);
 	font-size: var(--size-l);
 	font-weight: var(--weight-text);
-	line-height: 150%;
+	line-height: 170%;
+}
+
+.hero_button {
+	background-color: var(--color-text);
+	width: 87px;
+	height: 11px;
+	color: var(--color-white);
+	line-height: 100%;
 }
 
 .blog {
@@ -165,16 +175,15 @@
 .card {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	text-align: center;
+	align-items: flex-start;
 	gap: var(--spase-l);
 
 }
 
 .card_image {
-	height: 140px;
-	width: 140px;
-	border-radius: 50%;
+	height: 64px;
+	width: 64px;
+	border-radius: var(--border-radus);
 }
 
 .card_title {
@@ -198,8 +207,8 @@
 }
 
 .card_button {
-	color: var(--color-white);
-	background-color: var(--color-primary);
+	color: var(--color-primary);
+	background-color: var(--color-white);
 }
 
 .button:hover {
@@ -210,6 +219,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	gap: var(--size-d);
 
 	background: var(--color-primary);
 	padding: var(--size-l);
@@ -219,18 +231,13 @@
 .form_content {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: var(--spase-m);
 }
 
 .form_title {
-	font-size: 27px;
+	font-size: var(--spase-l);
 	font-weight: var(--weight-title);
-	color: var(--color-white);
-}
-
-.form_info {
-	font-size: var(--size-d);
-	font-weight: var(--weight-text);
 	color: var(--color-white);
 }
 

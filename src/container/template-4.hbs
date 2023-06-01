@@ -13,11 +13,12 @@
 
 {{#with hero}}
 	<div class="div hero">
+		<img src="{{photo}}" alt="Hero image" class="hero_image">
 		<div class="hero content">
 			<h1 class="hero_title">{{title}}</h1>
 			<p class="hero_text">{{text}}</p>
+			<a class="button hero_button" href="{{href}}">{{button}}</a>
 		</div>
-		<img src="{{photo}}" alt="Hero image" class="hero_image">
 	</div>
 {{/with}}
 
@@ -31,7 +32,6 @@
 <div class="form">
 	<div class="form_content">
 		<h3 class="form_title">{{title}}</h3>
-		<p class="form_info">{{info}}</p>
 	</div>
 	<div class="form_action">
 		<a class="button form_button" href="{{href}}">{{button}}</a>
