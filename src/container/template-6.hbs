@@ -1,0 +1,87 @@
+<header class="header">		
+		<a href="#test">
+			{{>logo}}
+		</a>
+		
+		<nav class="header_nav">
+			<div class="header_nav_right">
+				{{>nav list=header}}
+			</div>
+		</nav>
+</header>
+ 
+ <main class="main">
+	{{#with info}}
+		<div class="div info">
+			<div class="info content">
+				<h1 class="info_title">{{title}}</h1>
+				<p class="info_description">{{description}}</p>
+			</div>
+		</div>
+   {{/with}}
+
+	{{#with form}}
+	<form class="form">
+		<h2 class="form_title">{{title}}</h2>
+
+		<div class="form_input_list">
+			{{#each inputs}}
+				<input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}"
+				id="form-input-{{id}}" />
+			{{/each}}
+		</div>
+
+		<div class="form_checkbox">
+			<input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
+			<div></div>
+			<label for="checkbox.name">{{checkbox.label}}</label>
+		</div>
+
+		<button type="submit" class="form_button">{{button}}</button>
+		<p class="form_info">{{info}}</p>
+	</form>
+	{{/with}}
+ </main>
+
+
+ 	{{#with updates}}
+		<div class="updates">
+			<h1 class="updates_title">{{title}}</h1>
+
+			{{#each list}}
+			<div class="list">
+				<a class="button update_button" href="{{url}}">{{text}}</a>
+				<strong class="list_nickname">{{nickname}}</strong>
+				<p class="list_description">{{description}}</p>
+				</div>
+			{{/each}}
+			
+			<a href="{{url}}" class="updates_link">All updates</a>
+		</div>
+	{{/with}}
+
+ <div class="expiriences">
+	{{#each expirience}}
+	   <div>
+		   <h1 class="expiriences_title">{{title}}</h1>
+		   <a class="button expiriences_button" href="#">{{badge}}</a>
+			<strong>{{name}}</strong>
+			<p>{{details}}</p>
+	   </div>
+	{{/each}}
+ </div>
+
+<footer class="footer" id="test">
+	<div>
+		{{>logo}}
+		<span class="footer_copyright"> 2023-2024</span>
+	</div>
+	{{#each footer}}
+		<div>
+			<span class="footer_title">{{title}}</span>
+			{{>nav list=links isVertical=true}}
+		</div>
+	{{/each}}
+</footer>
+
+
