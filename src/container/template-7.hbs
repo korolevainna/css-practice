@@ -1,0 +1,51 @@
+<header class="header">		
+		<a href="#test">
+			{{>logo}}
+		</a>
+		
+		<nav class="header_hesderDark">
+			<div class="header_hesderDark_right">
+				{{>hesderDark list=header}}
+			</div>
+		</nav>
+</header>
+ 
+ <main class="main">
+	{{#with hero}}
+		<div class="div hero">
+			<div class="hero content">
+				<h1 class="hero_title">{{title}}</h1>
+				<p class="hero_description">{{description}}</p>
+				{{#each button}}
+				<a class="button hero_button" href="{{url}}">{{text}}</a>
+				{{/each}}
+			</div>
+		</div>
+   {{/with}}
+
+	{{#with about}}
+	<form class="form">
+		<h2 class="about_heading">{{heading}}</h2>
+		<p class="about_info">{{info}}</p>
+	</form>
+	{{/with}}
+ </main>
+
+
+ 	{{#with articles}}
+		<div class="card">
+           {{>articleCardDar list=articles isNew=true}}	
+		</div>
+	{{/with}}
+
+
+<footer class="footer" id="test">
+	{{#each footer}}
+		<div>
+			<span class="footer_copyright">{{copyright}}</span>
+			{{>foterDark list=links isVertical=true}}
+		</div>
+	{{/each}}
+</footer>
+
+
