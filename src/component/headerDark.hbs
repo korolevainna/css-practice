@@ -1,0 +1,22 @@
+{{#with data}}
+<div class="card text-bg-dark">
+	<div class="header_logo col-3">
+		<span class="badge text-bg-primary">10</span>
+	</div>
+	<div class="card_body text-bg-dark">
+		<div class="card_block">
+			{{#each ad}}
+				<a href="{{url}}" class="headerDark_ad">{{text}}</a>
+			{{/each}}
+		</div>
+		<ul class="card_block">
+			{{#each links}}
+				<a href="{{url}}" class="headerDark_link">{{text}}</a>
+			{{/each}}	
+		</ul>
+		<div class="card_block">
+			<button class="btn {{#if @first}} btn-outline-primary{{else}}btn-primary{{/if}} card_button">{{button}}</button>
+		</div>
+	</div>
+</div>
+{{/with}}
